@@ -50,7 +50,7 @@ const Login = () => {
                   onChange={(e) => setUser({ ...user, email: e.target.value })}
                 />
               </div>
-              <div className='flex flex-col gap-1 mb-5 relative'>
+              <div className='flex flex-col gap-1 mb-2 relative'>
                 <label htmlFor="password" className='font-semibold text-sm'>Password</label>
                 <input
                   type={showPassword ? "text" : "password"}
@@ -63,6 +63,7 @@ const Login = () => {
                 <ShowPassword showPassword={showPassword} />
               </div>
               </div>
+                <Link href="/forgot-password" className='text-sky-800 underline mb-5 text-right block'>Forgot Password?</Link>
               <div>
                 <button type="submit" className='py-1 w-full text-center bg-sky-800 text-white font-semibold rounded'>Submit</button>
               </div>
